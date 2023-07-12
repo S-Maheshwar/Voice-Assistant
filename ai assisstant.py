@@ -52,7 +52,7 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('youremail@gmail.com', 'your-password') #you can enter your gmail details here
+    server.login('youremail@gmail.com', 'your-password') #enter your gmail details here
     server.sendmail('youremail@gmail.com', to, content)
     server.close()
 
@@ -82,7 +82,7 @@ if __name__ == "__main__":
 
 
         elif 'play music' in query:
-            music_dir = 'Downloads\Official Music Video  VALORANT Champions 2021.mp3'
+            music_dir = 'C:\Music'              #enter the path to your music playlist 
             songs = os.listdir(music_dir)
             print(songs)    
             os.startfile(os.path.join(music_dir, songs[0]))
@@ -95,18 +95,18 @@ if __name__ == "__main__":
             codePath = "D:\pycharm\Microsoft VS Code\Code.exe"
             os.startfile(codePath)
 
-        elif 'email to maheshwar' in query:
+        elif 'email to maheshwar' in query:     #you can change it to name of the recevier
             try:
                 speak("What should I say?")
                 content = takeCommand()
-                to = "maheshwar.sathyabama@gmail.com"    
+                to = "receiver@gmail.com"    #enter the recevier gmail address
                 sendEmail(to, content)
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
                 speak("Sorry sir. I am not able to send this email")   
         elif 'open game' in query:
-            codePath = "D:\Valorant\Riot Games\Riot Client\RiotClientServices.exe" #enter your favorite game file location
+            codePath = "D:\Valorant\Riot Games\Riot Client\RiotClientServices.exe" #enter the path to your favorite game
             os.startfile(codePath)
             speak("As you wish sir, I have opened riot client!") 
         
