@@ -1,5 +1,5 @@
 # Voice-Assistant
-The Voice Assistant is built using Python using if statements. The Voice Assistant is designed to respond to voice commands and perform specific actions based on predefined if statements, providing a simple yet functional voice-controlled assistant.
+The Voice Assistant is built using Python using if statements. The Voice Assistant is designed to respond to voice commands and perform specific actions based on predefined if and elif statements, providing a simple yet functional voice-controlled assistant.
 # How To Use
 The following tasks can be performed by this Voice Assistant,
 1) Search in Wikipedia and display the result (Note: For searching in Wikipedia, the format is "Name Wikipedia". Example: Shahrukh Khan Wikipedia)
